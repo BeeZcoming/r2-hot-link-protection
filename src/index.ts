@@ -1,11 +1,11 @@
 // 修改这个列表，更新为自己的 domain list
 const ALLOWED = new Set([
-  'app.justincourse.com',
-  'justincourse.com', 
-  'interjc.net'
+  'zyds.net',
+  'www.zyds.net', 
+  '*.zyds.net'
 ]);
 const CORP    = 'same-site';     // same-origin 也行
-const BUCKET  = 'MEDIA';         // 对应 wrangler 的 r2_buckets 绑定名
+const BUCKET  = 'zyds';         // 对应 wrangler 的 r2_buckets 绑定名
 
 export default {
   async fetch(request: Request, env: Env) {
